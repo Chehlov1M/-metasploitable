@@ -5,17 +5,18 @@
 
 В ходе сканирования (nmap -sV -p- <IP>) на Metasploitable 2 был выявлен широкий спектр устаревших и уязвимых сетевых служб:
 Порт	Протокол	Служба	Примечание
-21	TCP	FTP (vsftpd)	Уязвимая версия с бэкдором
-22	TCP	SSH (OpenSSH)	Стандартный порт, возможны слабые конфигурации
-23	TCP	Telnet	Передача данных в открытом виде
-25	TCP	SMTP (Postfix)	Почтовый сервер
-53	TCP/UDP	DNS (Bind)	Служба доменных имён
-80	TCP	HTTP (Apache)	Веб-сервер на устаревшей версии
-111	TCP/UDP	RPCbind	Служба удалённого вызова процедур
-139/445	TCP	SMB (Samba)	Файловый сервер, известен уязвимостями
-3306	TCP	MySQL	База данных
-5432	TCP	PostgreSQL	База данных
-8180	TCP	Tomcat	Сервер приложений
+Порт	Протокол	Служба	Версия (примерная)	Статус
+21	TCP	FTP	vsftpd 2.3.4	Open
+22	TCP	SSH	OpenSSH	Open
+23	TCP	Telnet	—	Open
+25	TCP	SMTP	Postfix	Open
+53	TCP/UDP	DNS	Bind 9.x	Open
+80	TCP	HTTP	Apache 2.2.x	Open
+111	TCP/UDP	RPC	rpcbind	Open
+139/445	TCP	SMB	Samba 3.x	Open
+3306	TCP	MySQL	—	Open
+5432	TCP	PostgreSQL	—	Open
+8180	TCP	Tomcat	—	Open
 
 Выявленные уязвимости (3 примера)
 
