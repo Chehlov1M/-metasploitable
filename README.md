@@ -4,19 +4,19 @@
 Обнаруженные сетевые службы
 
 В ходе сканирования (nmap -sV -p- <IP>) на Metasploitable 2 был выявлен широкий спектр устаревших и уязвимых сетевых служб:
-Порт	Протокол	Служба	Примечание
-Порт	Протокол	Служба	Версия (примерная)	Статус
-21	TCP	FTP	vsftpd 2.3.4	Open
-22	TCP	SSH	OpenSSH	Open
-23	TCP	Telnet	—	Open
-25	TCP	SMTP	Postfix	Open
-53	TCP/UDP	DNS	Bind 9.x	Open
-80	TCP	HTTP	Apache 2.2.x	Open
-111	TCP/UDP	RPC	rpcbind	Open
-139/445	TCP	SMB	Samba 3.x	Open
-3306	TCP	MySQL	—	Open
-5432	TCP	PostgreSQL	—	Open
-8180	TCP	Tomcat	—	Open
+| Порт | Протокол | Служба | Версия (примерная) | Статус |
+| :--- | :--- | :--- | :--- | :--- |
+| 21 | TCP | FTP | vsftpd 2.3.4 | Open |
+| 22 | TCP | SSH | OpenSSH | Open |
+| 23 | TCP | Telnet | — | Open |
+| 25 | TCP | SMTP | Postfix | Open |
+| 53 | TCP/UDP | DNS | Bind 9.x | Open |
+| 80 | TCP | HTTP | Apache 2.2.x | Open |
+| 111 | TCP/UDP | RPC | rpcbind | Open |
+| 139/445 | TCP | SMB | Samba 3.x | Open |
+| 3306 | TCP | MySQL | — | Open |
+| 5432 | TCP | PostgreSQL | — | Open |
+| 8180 | TCP | Tomcat | — | Open |
 
 Выявленные уязвимости (3 примера)
 
